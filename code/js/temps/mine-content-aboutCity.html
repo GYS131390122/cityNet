@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"  font-size="100px">
+<head>
+    <meta charset="UTF-8">
+    <title>我的</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <style>
+        body{
+            background-color: #f0f0f0;
+        }
+        .aboutCity{
+            width: 3.2rem;
+            height: 0.44rem;
+            background-color:#d23e3e;
+            line-height: 0.44rem;
+            text-align: center;
+            font-size: 0.16rem;
+            font-weight: 600;
+            color: #f3f3f3;
+            margin-bottom: 0.3rem;
+            position: fixed;
+            top:0px;
+            z-index: 2;
+        }
+        .goback{
+            position: absolute;
+            left:0.15rem;
+            top:0.14rem;
+            height: 0.16rem;
+        }
+        .aboutCity-detail{
+            width: 3rem;
+            /*background-color: white;*/
+            padding-left: 0.1rem;
+            padding-right: 0.1rem;
+            padding-top:0.58rem ;
+        }
+        .aboutCity-detail p{
+            font-size: 0.14rem;margin-bottom: 0.14rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="aboutCity"><img class="goback" src="../../imgs/返回@2x.png" alt="">关于城市网</header>
+    <div class="aboutCity-detail">
+        <p>关于城市网</p>
+        <p>城市网是一款城市生活服务产品，具有民生、情感、美食、亲子、活动、情感生活话题，是本地老百姓交流生活资讯、消费娱乐、民生信息的平台。其中，城市小蜜为三四五线城市居民提供更为便捷快捷的生活信息服务。</p>
+        <p>联系电话：13958092437</p>
+        <p>服务时间：9:30-21:00</p>
+    </div>
+</body>
+</html>
+<script>
+    var baseUnit = window.innerWidth/3.2;
+    document.documentElement.style.fontSize = baseUnit+'px';
+</script>

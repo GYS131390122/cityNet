@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"  font-size="100px">
+<head>
+    <meta charset="UTF-8">
+    <title>设置</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <style>
+        body{
+            background-color: #f0f0f0;
+        }
+        .setHeader{
+            width: 3.2rem;
+            height: 0.44rem;
+            background-color:#d23e3e;
+            line-height: 0.44rem;
+            text-align: center;
+            font-size: 0.16rem;
+            font-weight: 600;
+            color: #f3f3f3;
+            margin-bottom: 0.3rem;
+            position: fixed;
+            top:0px;
+            z-index: 2;
+        }
+        .goback{
+            position: absolute;
+            left:0.15rem;
+            top:0.14rem;
+            height: 0.16rem;
+        }
+        .setMenu{
+            width: 3rem;
+            background-color: white;
+            padding-left: 0.1rem;
+            padding-right: 0.1rem;
+            margin-top: 0.54rem;
+        }
+
+
+
+
+        .setMenu li{
+            border-bottom: 0.01rem solid #e6e6e6;
+            height: 0.5rem;
+            font-size: 0px;
+            position: relative;
+        }
+        .setMenu li span{
+            font-size: 0.14rem;
+            position: absolute;
+            left:0.16rem;
+            height: 0.45rem;
+            color: #666666;
+            line-height: 0.5rem;
+        }
+        .setMenu li img{
+            height: 0.16rem;
+            position: absolute;
+            right:0.05rem;
+            top:0.17rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="setHeader"><img class="goback" src="../../imgs/返回@2x.png" alt="">我的</header>
+    <div class="setMenu">
+        <ul>
+            <li><span>修改登录名</span><img src="../../imgs/_pic.png" alt=""></li>
+            <li><span>账号和密码</span><img src="../../imgs/_pic.png" alt=""></li>
+            <li><span>修改手机号</span><img src="../../imgs/_pic.png" alt=""></li>
+            <li><span>个人资料</span><img src="../../imgs/_pic.png" alt=""></li>
+            <li><span>清除缓存</span><img src="../../imgs/_pic.png" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>
+<script>
+    var baseUnit = window.innerWidth/3.2;
+    document.documentElement.style.fontSize = baseUnit+'px';
+</script>

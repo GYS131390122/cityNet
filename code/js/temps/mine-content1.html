@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en"  font-size="100px">
+<head>
+    <meta charset="UTF-8">
+    <title>我的</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <style>
+        body{
+            background-color: #f0f0f0;
+        }
+        header{
+            width: 3.2rem;
+            height: 0.44rem;
+            background-color:#d23e3e;
+            line-height: 0.44rem;
+            text-align: center;
+            font-size: 0.16rem;
+            font-weight: 600;
+            color: #f3f3f3;
+            margin-bottom: 0.3rem;
+            position: fixed;
+            top:0px;
+            z-index: 2;
+        }
+        .mine-detail{
+            margin-top: 0.44rem;
+        }
+        .mine-detail-header{
+            width: 3rem;
+            background-color: white;
+            height: 1.77rem;
+            margin-bottom: 0.05rem;
+            padding-left: 0.1rem;
+            padding-right: 0.1rem;
+        }
+        .picDetail{
+            height: 1.22rem;
+            padding-left:0.2rem ;
+            position: relative;
+        }
+        .mine-detail-header p{
+            font-size: 0.12rem;
+            color: #676767;
+        }
+        .pic{
+            width:0.8rem;
+            height: 0.8rem;
+            border:0.01rem solid #e6e6e6;
+            border-radius: 50%;
+        }
+        .mine-detail-content p{
+
+            -webkit-text-size-adjust:none;
+            font-size: 0.09rem;
+        }
+        .pic_detail div{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        ._pic{
+            position: absolute;
+            right:0.05rem;
+            top:0.45rem;
+            height: 0.16rem;
+        }
+        .mine-detail-header-num{
+            border-top: 0.01rem solid #e6e6e6;
+        }
+        .mine-detail-header-num li{
+            float: left;
+            width: 0.75rem;
+        }
+        .mine-detail-header-num p{
+            width: 0.75rem;
+            text-align: center;
+            margin-top: 0.08rem;
+            color: #666;
+        }
+        .mine-detail-header-num li div{
+            width: 0.75rem;
+            text-align: center;
+            margin-top: 0.1rem;
+            font-size: 0.17rem;
+            color: #676767;
+        }
+        .mine-detail-content{
+            width: 3rem;
+            background-color: white;
+            padding-left: 0.1rem;
+            padding-right: 0.1rem;
+        }
+        .mine-detail-content li{
+            border-bottom: 0.01rem solid #e6e6e6;
+            height: 0.41rem;
+            font-size: 0px;
+            position: relative;
+        }
+        .mine-detail-content li span{
+            font-size: 0.14rem;
+            position: absolute;
+            left:0.53rem;
+            height: 0.41rem;
+            line-height: 0.41rem;
+        }
+        .mine-detail-content li div{
+            width: 0.6rem;
+            position: absolute;
+            top:0px;
+            left:0px;
+            height: 100%;
+        }
+
+
+        .mine-detail-content li img{
+            height: 0.16rem;
+            position: absolute;
+            right:0.05rem;
+            top:0.125rem;
+
+
+
+        }
+        .mine-detail-content .goods{
+              background: url('../../imgs/我的物品@2x.png') no-repeat center;
+              background-size: auto 0.17rem;
+          }
+        .mine-detail-content .collect{
+            background: url('../../imgs/我的收藏@2x.png') no-repeat  center;
+            background-size: auto 0.17rem;
+        }
+        .mine-detail-content .draft{
+            background: url('../../imgs/草稿箱@2x.png') no-repeat center;
+            background-size: auto 0.17rem;
+        }
+        .mine-detail-content .msg{
+            background: url('../../imgs/我的消息@2x.png') no-repeat center;
+            background-size: auto 0.17rem;
+        }
+        .mine-detail-content .aboutCity{
+            background: url('../../imgs/关于我们@2x.png') no-repeat center;
+            background-size: auto 0.17rem;
+        }
+        .mine-detail-content .set{
+            background: url('../../imgs/设置@2x.png') no-repeat center;
+            background-size: auto 0.17rem;
+        }
+        .mine-detail-content .exit{
+            background: url('../../imgs/退出登录@2x.png') no-repeat center;
+            background-size: auto 0.17rem;
+        }
+    </style>
+</head>
+<body>
+    <header>我的</header>
+    <div class="mine-detail">
+        <div class="mine-detail-header">
+            <div class="picDetail">
+                <div class="pic_detail">
+                    <div class="pic">
+                        <img src="" alt="">
+                    </div>
+                    <div class="picName">
+                        <p style="font-size: 0.16rem;margin-bottom: 0.05rem;color: black">你好</p>
+                        <p>1111ssssss</p>
+                    </div>
+                </div>
+                <img class="_pic" src="../../imgs/_pic.png" alt="">
+            </div>
+            <div class="mine-detail-header-num">
+                <ul>
+                    <li><div>0</div><p>帖子</p></li>
+                    <li><div>0</div><p>关注</p></li>
+                    <li><div>0</div><p>粉丝</p></li>
+                    <li><div>0</div><p>赏金</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mine-detail-content">
+            <ul>
+                <li ui-sref="goods.html"><div class="goods"></div><span>我的物品</span><img src="../../imgs/_pic.png" alt=""></li>
+                <li><div class="collect"></div><span>我的收藏</span><img src="../../imgs/_pic.png" alt=""></li>
+                <li><div class="draft"></div><span>草稿箱</span><img src="../../imgs/_pic.png" alt=""></li>
+                <li><div class="msg"></div><span>我的消息</span><img src="../../imgs/_pic.png" alt=""></li>
+                <li><div class="aboutCity"></div><span>关于城市网</span><img src="../../imgs/_pic.png" alt=""></li>
+                <li><div class="set"></div><span>设置</span><img src="../../imgs/_pic.png" alt=""></li>
+                <li><div class="exit"></div><span>退出登录</span><img src="../../imgs/_pic.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var baseUnit = window.innerWidth/3.2;
+    document.documentElement.style.fontSize = baseUnit+'px';
+</script>
